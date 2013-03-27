@@ -1,29 +1,29 @@
-# SpreeCloudinary
+# Spree Cloudinary
 
-TODO: Write a gem description
+This is a Spree extension that uploads images to
+[Cloudinary](https://cloudinary.com) via [CarrierWave](https://github.com/jnicklas/carrierwave) instead of
+the default [Paperclip](https://github.com/thoughtbot/paperclip).
 
-## Installation
+## Why I made such this gem?
 
-Add this line to your application's Gemfile:
+Providing an alternative free solution for cloud image storing
 
-    gem 'spree_cloudinary'
+# Setup
 
-And then execute:
+Add `spree_cloudinary` to your Gemfile and `bundle`.
 
-    $ bundle
+# Configuration
 
-Or install it yourself as:
+Create an initializer file for Cloudinary (`config/initializers/spree_cloudinary.rb`):
 
-    $ gem install spree_cloudinary
+    # See the section titled 'Ruby On Rails integration' at http://cloudinary.com/documentation/rails_integration
+    # for full options.
 
-## Usage
+    Cloudinary.config do |config|
+      config.cloud_name = 'sample'
+      config.api_key = '874837483274837'
+      config.api_secret = 'a676b67565c6767a6767d6767f676fe1'
+      config.cdn_subdomain = true
+    end
 
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Copyright (c) 2013 ThachChau, released under the MIT License
