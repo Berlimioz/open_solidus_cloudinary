@@ -26,4 +26,13 @@ Create an initializer file for Cloudinary (`config/initializers/spree_cloudinary
       config.cdn_subdomain = true
     end
 
+# Override default size
+    # Create a model file named 'cloudinary_uploader_decorator.rb'
+
+    CloudinaryUploader.class_eval do
+      version :your_custom_type do
+        process :resize_to_fit => [your_custom_size, your_custom_size]
+      end
+    end
+
 Copyright (c) 2013 ThachChau, released under the MIT License
