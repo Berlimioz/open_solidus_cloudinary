@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 2.13.0'
   spec.add_development_dependency 'debugger', '~> 1.5.0'
 
-  spec.add_dependency 'spree_core', '~> 1.3.0'
+  spec.add_dependency 'spree_core', '>= 1.3.0'
   spec.add_dependency 'carrierwave', '~> 0.8.0'
   spec.add_dependency 'cloudinary', '~> 1.0.0'
 end
