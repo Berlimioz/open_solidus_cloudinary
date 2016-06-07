@@ -27,4 +27,8 @@ class CloudinaryUploader < CarrierWave::Uploader::Base
   version :large do
     process :resize_to_fit => [600, 600]
   end
+
+  def flush_errors;end
+  def dirty?;end
+  def save; end
 end

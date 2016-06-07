@@ -1,6 +1,6 @@
-module SpreeCloudinary
+module SolidusCloudinary
   class Engine < Rails::Engine
-    engine_name 'spree_cloudinary'
+    engine_name 'solidus_cloudinary'
 
     config.autoload_paths += %W(#{config.root}/lib)
 

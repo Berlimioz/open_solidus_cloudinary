@@ -1,0 +1,5 @@
+require 'solidus_core'
+require 'carrierwave'
+require 'cloudinary'
+require 'solidus_cloudinary/engine'
+require 'solidus_cloudinary/version'
