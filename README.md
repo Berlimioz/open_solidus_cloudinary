@@ -1,20 +1,18 @@
-# Spree Cloudinary
+# Solidus Cloudinary
 
-This is a Spree extension that uploads images to
+This gem is inspired from the Spree Cloudinary extension spree_cloudinary, and most of the code is from https://github.com/chautoni/spree_cloudinary.
+
+This is a Solidus extension that uploads images to
 [Cloudinary](https://cloudinary.com) via [CarrierWave](https://github.com/jnicklas/carrierwave) instead of
 the default [Paperclip](https://github.com/thoughtbot/paperclip).
 
-## Why I made such this gem?
-
-Providing an alternative free solution for cloud image storing
-
 # Setup
 
-Add `spree_cloudinary` to your Gemfile and `bundle`.
+Add `open_solidus_cloudinary` to your Gemfile and `bundle`.
 
 # Configuration
 
-Create an initializer file for Cloudinary (`config/initializers/spree_cloudinary.rb`):
+Create an initializer file for Cloudinary (`config/initializers/solidus_cloudinary.rb`):
 
     # See the section titled 'Ruby On Rails integration' at http://cloudinary.com/documentation/rails_integration
     # for full options.
@@ -35,4 +33,3 @@ Create an initializer file for Cloudinary (`config/initializers/spree_cloudinary
       end
     end
 
-Copyright (c) 2013 ThachChau, released under the MIT License
