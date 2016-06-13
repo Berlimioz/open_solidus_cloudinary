@@ -31,4 +31,6 @@ class CloudinaryUploader < CarrierWave::Uploader::Base
   def flush_errors;end
   def dirty?;end
   def save; end
+  def queue_all_for_delete; end
+  def flush_deletes; end
 end
